@@ -23,65 +23,73 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <section id="top-bar">
+            <section id="content-top-bar">
+                <section id="logo-head">
+                    <img src="" alt="">
+                </section>
+                <div id="separator"></div>
+                <section id="sign-up">
+                    <input type="button" class="btn" value="Registrate Ahora!">
+                </section>
+                <div id="separator"></div>   
+                <section id="sign-in-form">
+                    <form name="sign-in-form" action="">
+                        <input type="text" class="nombre_user" name="nombre_user" placeholder="Nombre de Usuario" required>
+                        <input type="password" class="password" name="password" placeholder="Password" required>
+                        <input type="submit" class="btn usr" value="Ingresar">
+                    </form>
+                </section>
+            </section>    
+        </section>
+        <div id="lnk">
+            <a href=""><span>Android ↨</span></a>
+        </div>
         <div id="contenedor">
             <header>
-                <section id="top-bar">
-                    <section id="logo-head">
-                        <img src="" alt="">
-                    </section>
-                    <section id="sign-up">
-                        <input type="button" value="Registrate Ahora!">
-                    </section>   
-                    <section id="sign-in-form">
-                        <form name="sign-in-form" action="">
-                            <label for="nombre_user">Nombre de Usuario: </label>
-                            <input type="text" name="nombre_user" required>
-                            <label for="password">Password: </label>
-                            <input type="password" name="password" required>
-                            <input type="submit" value="Ingresar">
-                        </form>
-                    </section>
-                    <a href="">Android ↨</a>
-                </section>
                 <div id="logo">
                     <img src="" alt="">
                 </div>
-                <nav>
+                <nav class="nav-left">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Nosotros</li>
-                        <li>Android</li>
-                        <li>Contactos</li>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Android</a></li>
+                        <li><a href="">Registros</a></li>
                     </ul>
                 </nav>    
             </header>
             <section>
                 <div id="grid">
-                    <article class="grid">
-                        <img src="" alt="">
+                    <article class="grids">
+                        <img src="img/icon_design.jpg" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
+                        <h2>Cotenido 1</h2>
                     </article>
-                    <article class="grid">
-                        <img src="" alt="">
+                    <article class="grids">
+                        <img src="img/icon_develop.jpg" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
+                        <h2>Cotenido 1</h2>
                     </article>
-                    <article class="grid">
-                        <img src="" alt="">
+                    <article class="grids">
+                        <img src="img/icon_support.jpg" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
+                        <h2>Cotenido 1</h2>
                     </article>
                 </div>    
             </section>
-            <footer>
-                <section id="contact">
-                    <form name="sign-in-form" action="">
-                        <input type="text" name="nombre" placeholder="Aquí tu Nombre" required>
-                        <input type="email" name="correo" placeholder="Aquí tu correo" required>
-                        <textarea name="coment" id="" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Ingresar">
-                        </form>
-                </section>
-            </footer>
         </div> 
+        <footer>
+            <div id="tit-footer">Registros</div>
+            <section id="register">
+                <form name="sign-in-form" action="">
+                    <input type="text" class="nombre" name="nombre" placeholder="Aquí tu Nombre" required>
+                    <input type="email" class="correo" name="correo" placeholder="Aquí tu correo" required>
+                    <textarea name="coment" class="mensaje" cols="20" rows="10" placeholder="El mensaje..."></textarea>
+                    <input type="submit" class="btn" value="Ingresar">
+                </form>
+            </section>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
