@@ -15,7 +15,7 @@ LAYOUT
 *******************************************************************/
 
 #contenedor{
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -24,8 +24,9 @@ TOP BAR
 *******************************************************************/
 #top-bar{
 	background-image: url(../img/bg_head.jpg);
-	height: 190px;
+	height: 650px;
 	width: 100%;
+	overflow: hidden;
 }
 #content-top-bar{
 	width: 90%;
@@ -81,10 +82,44 @@ TOP BAR
 	margin-top: 8px;
 }
 /*******************************************************************
+MAIN
+*******************************************************************/
+#main{
+	background-image: url(../img/bg_head.jpg);
+	height: 650px;
+	width: 100%;
+	overflow: hidden;
+}
+#main .logo-head{
+	margin: auto;
+	height: 300px;
+	width: 65%;
+}
+.logo-head .txt-head{
+	width: 60%;
+}
+.logo-head .img-head, .txt-head{
+	margin-top: 200px;
+	vertical-align: top;
+	display: inline-block;
+}
+.logo-head .txt-head{
+	padding-left: 40px;
+	padding-top: 40px;
+	vertical-align: top;
+	color: white;
+	text-align: center;
+}
+.logo-head .txt-head .tlt{
+	font-size: 80px;
+	display: block;
+}
+/*******************************************************************
 MENU
 *******************************************************************/
 header{
 	margin-top: 20px;
+	height: 74px;
 	background-color: #202123;
 }
 #contenedor #logo, nav{
@@ -92,10 +127,14 @@ header{
 	vertical-align: top;
 }
 #contenedor #logo{
-	width: 57% !important;
+	width: 40% !important;
 }
 #contenedor nav{
 	background-color: #202123;
+}
+#contenedor .nav-left{
+	float: right;
+	margin-right: 2%;
 }
 #contenedor nav ul li{
 	display: inline-block;
@@ -116,11 +155,16 @@ header{
 /*******************************************************************
 GRID
 *******************************************************************/
+#grid{
+	width: 80%;
+	margin: auto;
+}
 #grid .grids{
 	vertical-align: top;
 	display: inline-block;
 	width: 28%;
 	padding: 2%;
+	margin: auto;
 }
 #grid img{
 	text-align: center;
