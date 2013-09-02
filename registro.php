@@ -69,53 +69,61 @@
                 <nav class="nav-left">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#contactos">Contactos</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#contactos">Contactos</a></li>
                         <li><a href="registro.php">Registros</a></li>
                     </ul>
                 </nav>    
             </header>
             <hr>
-            <a name="nosotros"></a>
-            <section id="slide">
-                <div id="sld">
-                    <img src="img/marquee.png" alt="">
-                    <div id="sd">
-                        <h2>Lorem ipsum dolor sit amet</h2>  
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, saepe, laudantium, voluptas mollitia culpa sit vero ut cumque doloremque rerum provident aperiam sapiente odit aliquam laboriosam odio aspernatur possimus eaque?</p>
-                    </div>
-                </div>
-            </section>
-            <hr>
-            <section>
-                <div id="grid">
-                    <h1>Bienvenido al AndroidCamp</h1>
-                    <article class="grids">
-                        <img src="img/icon_design.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
-                        <h2>Cotenido 1</h2>
-                    </article>
-                    <article class="grids">
-                        <img src="img/icon_develop.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
-                        <h2>Cotenido 1</h2>
-                    </article>
-                    <article class="grids">
-                        <img src="img/icon_support.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
-                        <h2>Cotenido 1</h2>
-                    </article>
-                </div>    
+            <section class="registro">
+                <h1>Registrate para ser parte del Android Camp</h1>
+                <form action="" method="POST" name="miForm">
+	                <div id="n">	
+	                	<label id="" for="nombre">Nombre Completo: </label>
+	                	<input type="text" required id="nombre" name="nombre">
+                	</div>
+	                <div id="a">	
+	                	<label id="" for="apellidos">Apellidos: </label>
+	                	<input type="text" required id="apellidos" name="apellidos">
+                	</div>
+                	<div id="e">
+	                	<label id="" for="correo">E-Mail: </label>
+	                	<input type="email" required id="correo" name="correo">
+	                </div>
+	                <div id="t">	
+	                	<label id="" for="telefono">Teléfono: </label>
+	                	<input type="text" required id="telefono" name="telefono">
+	                </div>
+	                <div id="i">	
+	                	<label id="" for="institucion">Institución: </label>
+	                	<input type="text" required id="institucion" name="institucion">
+                	</div>
+	                <div id="d">	
+	                	<label id="" for="departamento">Departamento: </label>
+	                	<select name="departamento" id="departamento">
+	                		<option value="bn">Beni</option>
+	                		<option value="cbba">Cochabamba</option>
+	                		<option value="lp">La Paz</option>
+	                		<option value="or">Oruro</option>
+	                		<option value="pnd">Pando</option>
+	                		<option value="pt">Potosí</option>
+	                		<option value="stc">Santra Cruz</option>
+	                		<option value="scr">Sucre</option>
+	                		<option value="tj">Tarija</option>
+	                	</select>
+                	</div>
+                	<input type="submit" class="btn" id="reg" value="Registrarse >" onclick="altaPersona()">
+                </form>  
             </section>
         </div> 
-        <a name="contactos"></a>
         <footer>
-            <div id="tit-footer">Contactanos</div>
+            <div id="tit-footer">Contactos</div>
             <section id="register">
-                <form name="contact" action="" method="POST">
-                    <input type="text" class="nombre" name="nombrec" placeholder="Aquí tu Nombre" required>
-                    <input type="email" class="correo" name="correoc" placeholder="Aquí tu correo" required>
-                    <textarea name="comentc" class="mensaje" cols="20" rows="10" placeholder="El mensaje..."></textarea>
+                <form name="contactForm" action="" method="POST">
+                    <input type="text" class="nombre" name="nombrec" id="nombrec" placeholder="Aquí tu Nombre" required>
+                    <input type="email" class="correo" name="correoc" id="correoc" placeholder="Aquí tu correo" required>
+                    <textarea name="comentc" id="comentc" class="mensaje" cols="20" rows="10" placeholder="El mensaje..."></textarea>
                     <input type="submit" class="btn" value="Enviar >" onclick="altaComentario()">
                 </form>
             </section>
@@ -128,16 +136,9 @@
                 <li><img src="img/9.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
                 <li><img src="img/10.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
             </ul>
-        </div>    
+        </div>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+ 
     </body>
 </html>

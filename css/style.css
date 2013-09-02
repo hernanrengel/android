@@ -1,7 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Aldrich);
 html { 
 	
 } 
-
+h1{
+	text-align: center;
+}
 body { 
 	width: 100%;
 } 
@@ -9,7 +12,14 @@ a{
 	text-decoration: none;
 	color: black;
 }
-
+hr{
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
 /*******************************************************************
 LAYOUT
 *******************************************************************/
@@ -54,7 +64,6 @@ TOP BAR
 #lnk{
 	width: 70px;
 	margin-left: 69.4%;
-	background-color: #202123;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 25px;
@@ -86,7 +95,7 @@ MAIN
 *******************************************************************/
 #main{
 	background-image: url(../img/bg_head.jpg);
-	height: 650px;
+	height: 670px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -105,52 +114,85 @@ MAIN
 }
 .logo-head .txt-head{
 	padding-left: 40px;
-	padding-top: 40px;
 	vertical-align: top;
 	color: white;
 	text-align: center;
 }
 .logo-head .txt-head .tlt{
-	font-size: 80px;
+	font-size: 70px;
 	display: block;
+	font-family: 'Aldrich', sans-serif;
 }
+.txt-head ul li{
+	list-style: none;
+	vertical-align: top;
+	display: inline-block;
+	padding-right: 25px;
+	transition: 0.5s all ease;
+}
+.txt-head ul li:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
 /*******************************************************************
 MENU
 *******************************************************************/
 header{
 	margin-top: 20px;
 	height: 74px;
-	background-color: #202123;
+	margin-bottom: 50px;
 }
 #contenedor #logo, nav{
 	display: inline-block;
 	vertical-align: top;
 }
 #contenedor #logo{
+	margin-left:9%;
 	width: 40% !important;
 }
 #contenedor nav{
-	background-color: #202123;
+	margin-top: 20px;
 }
 #contenedor .nav-left{
 	float: right;
-	margin-right: 2%;
+	margin-right: 6%;
 }
 #contenedor nav ul li{
 	display: inline-block;
 	vertical-align: top;
 	color: #ccc;
-	padding: 10px;
+	padding: 20px;
 	transition: all 0.5s ease;
 	text-align: center;
 	min-width: 90px;
 	cursor: pointer;
 }
 #contenedor nav ul li:hover{
-	background-color: #424d60;
+	background-color: #A4C439;
 }
 #contenedor nav ul li a{
-	color: #ccc;
+	color: black;
+	font-weight: 800;
+}
+
+/*******************************************************************
+SLIDE
+*******************************************************************/
+#slide{
+	margin: auto;
+	width: 80%;
+}
+#slide img, #sd{
+	vertical-align: top;
+	display: inline-block;
+}
+#slide img{
+	width: 45%;
+}
+#slide #sd{
+	margin-top: 70px;
+	width: 50%;
 }
 /*******************************************************************
 GRID
@@ -158,6 +200,9 @@ GRID
 #grid{
 	width: 80%;
 	margin: auto;
+}
+#grid h1{
+	text-align: center;
 }
 #grid .grids{
 	vertical-align: top;
@@ -191,11 +236,10 @@ footer{
 footer #tit-footer{
 	height: 30px;
 	font-size: 30px;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 	width: 100%;
-	background-color: #202123;
-	color: #ccc;
+	color: white;
 	text-align: center;
 }
 #register{
@@ -228,7 +272,7 @@ footer #tit-footer{
 }
 .btn{
 	padding: 16px 23px;
-	border: 2px solid #a8b6be;
+	border: 2px solid black;
 	border-radius: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -237,7 +281,7 @@ footer #tit-footer{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: none;
-	color: #a8b6be;
+	color: black;
 	background: transparent;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -252,12 +296,92 @@ footer #tit-footer{
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-    border-color: #a8b6be;
-    color: #fff;
-    background: #a8b6be;
+    border-color: black;
+    color: black;
+    background: #A4C439;
     background-position: 0 0;
     -webkit-transition: all 0.3s; 
     -moz-transition: all 0.3s; 
     -o-transition: all 0.3s; 
     transition: all 0.3s;  
+}
+.registro{	
+	width: 60% !important;
+	margin: auto;
+}
+.registro #nombre, #apellidos, #correo, #telefono, #institucion{
+	height: 20px !important;
+	font-size: 18px;
+	width: 350px;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.registro #nombre, #apellidos, #correo, #telefono, #institucion:hover{
+
+}
+.registro select{
+	display: block;;
+	height: 40px !important;
+	font-size: 18px;
+	width: 370px;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+
+.registro label{
+	width: 30%;
+	padding: 12px;
+	font-size: 20px;
+	text-align: right;
+}
+#reg{
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-left: 40%;
+}
+.registro #n label, #nombre{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.registro #a label, #apellidos{
+	display: inline-block;
+	vertical-align: top;
+}
+.registro #e label, #correo{
+	display: inline-block;
+	vertical-align: top;
+}
+.registro #t label, #telefono{
+	display: inline-block;
+	vertical-align: top;
+}
+.registro #i label, #institucion{
+	display: inline-block;
+	vertical-align: top;
+}
+.registro #d label, #departamento{
+	display: inline-block;
+	vertical-align: top;
+}
+/*******************************************************************
+PATROCINADORES
+*******************************************************************/
+#patrocinadores{
+	width: 60%;
+	margin: auto;
+}
+#patrocinadores ul li{
+	list-style: none;
+	vertical-align: top;
+	display: inline-block;
+	width: 24.5%;
+	text-align: center;
+}
+#patrocinadores img{
+	opacity: 1;
+	height: 80px;
 }
