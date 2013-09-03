@@ -107,3 +107,49 @@ body {
 #social .link:hover{
     background: rgba(255,255,255,0.3);
 }
+
+
+
+#patrocinadores{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#patrocinadores img{
+    filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+    filter: Gray(); /* IE4-8 and 9 */
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#patrocinadores img:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#patrocinadores ul li{
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    width: 23%;
+    vertical-align: top;
+    display: inline-block;
+}
