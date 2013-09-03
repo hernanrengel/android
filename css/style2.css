@@ -84,7 +84,7 @@
 }
 .da-slide .da-link{
 	top: 460px; /*depends on p height*/
-	border-radius: 30px;
+	border-radius: 4px;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 	color: #222222;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
