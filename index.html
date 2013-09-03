@@ -32,7 +32,7 @@
                 <section id="sign-up">
                     <input type="button" class="btn" value="Registrate Ahora!">
                 </section>
-                <div id="separator"></div>   
+                <div id="separator"></div>
                 <section id="sign-in-form">
                     <form name="sign-in-form" action="">
                         <input type="text" class="nombre_user" name="nombre_user" placeholder="Nombre de Usuario" required>
@@ -40,13 +40,13 @@
                         <input type="submit" class="btn usr" value="Ingresar">
                     </form>
                 </section>
-            </section>    
+            </section>
         </section>
         <div id="lnk">
             <a id="btnTop" href=""><span>Android ↨</span></a>
         </div>
         -->
-        <section id="main">
+        <section role="main" id="main">
             <div class="logo-head">
                 <div class="img-head">
                     <img src="img/logo.png" alt="" width="300">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </section>
-        <div id="contenedor">
+        <section role="content" id="contenedor">
             <header>
                 <div id="logo">
                     <img src="img/android_robot.png" alt="">
@@ -73,21 +73,20 @@
                         <li><a href="#contactos">Contactos</a></li>
                         <li><a href="registro.php">Registros</a></li>
                     </ul>
-                </nav>    
+                </nav>
             </header>
             <hr>
             <a name="nosotros"></a>
-            <section id="slide">
+            <article role="slider" id="slide">
                 <div id="sld">
                     <img src="img/marquee.png" alt="">
                     <div id="sd">
-                        <h2>Lorem ipsum dolor sit amet</h2>  
+                        <h2>Lorem ipsum dolor sit amet</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, saepe, laudantium, voluptas mollitia culpa sit vero ut cumque doloremque rerum provident aperiam sapiente odit aliquam laboriosam odio aspernatur possimus eaque?</p>
                     </div>
                 </div>
-            </section>
-            <hr>
-            <section>
+            </article>
+            <article role="information">
                 <div id="grid">
                     <h1>Bienvenido al AndroidCamp</h1>
                     <article class="grids">
@@ -105,11 +104,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in omnis cupiditate provident temporibus nemo accusantium suscipit dicta? Quo, nam, doloremque voluptatem incidunt quaerat aspernatur tempore harum ad! Doloribus, fugiat.</p>
                         <h2>Cotenido 1</h2>
                     </article>
-                </div>    
-            </section>
-        </div> 
-        <a name="contactos"></a>
+                </div>
+            </article>
+        </section>
         <footer>
+            <a name="contactos"></a>
             <div id="tit-footer">Contactanos</div>
             <section id="register">
                 <form name="contact" action="" method="POST">
@@ -119,19 +118,19 @@
                     <input type="submit" class="btn" value="Enviar >" onclick="altaComentario()">
                 </form>
             </section>
+            <div id="patrocinadores">
+                <h2>Patrocinadores</h2>
+                <ul>
+                    <li><img src="img/7.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li><img src="img/8.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li><img src="img/9.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                    <li><img src="img/10.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+                </ul>
+            </div>
         </footer>
-        <div id="patrocinadores">
-            <h2>Patrocinadores</h2>
-            <ul>
-                <li><img src="img/7.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-                <li><img src="img/8.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-                <li><img src="img/9.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-                <li><img src="img/10.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-            </ul>
-        </div>    
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
