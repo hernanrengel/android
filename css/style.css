@@ -1,3 +1,77 @@
+body {
+	font-family: 'Roboto Light', Helvetica, Arial;
+}
+
 .main-parallax {
 	height: 580px;
+
 }
+
+.title-page {}
+.title-page .title {
+	font-family: 'Roboto Thin', Helvetica !important;
+	font-size: 48px;
+    margin-bottom: 3px;
+}
+.title-page .title-description {
+    color: gray;
+    font-family: 'Roboto Light';
+    font-size: 24px;
+    margin-top: 5px;
+}
+.title-page .page-description {
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: 'Roboto Light';
+}
+.register-form {
+    margin-top: 20px;
+}
+.register-form .form-control {
+    border-radius: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.register-form .minor-alert {
+    margin: 5px 0;
+    color: gray;
+    display: block;
+    font-size: 12px;
+    font-family: 'Roboto Thin Italic', Helvetica;
+}
+
+
+.register-form .form-control:first-child {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+.register-form .form-control:nth-child(5) {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.event-map {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 365px;
+    border: 2px solid #efefef;
+    box-shadow: 0 0 20px #efefef;
+}
+
+
